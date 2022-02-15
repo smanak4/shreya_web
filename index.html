@@ -3,62 +3,69 @@
 <head>
 	<title> Money & Music </title>
 	<style>
-		h1  {
-    	color: #4B0082;
-    	text-align: left;
-    	font-family: "Monaco", "Lucida Console";
-    	}
+		
 		p  {
     	font-family: "Lucida Console", "Monaco" ;
     	}
-    	nav {
-    	font-size: 25px;
-    	text-align: right;
-    	font-family: "Lucida Console", "Monaco" 
-    	}
-    	a {
-    		color: #0000cc;
-    	}
-	img{
-		width: 100%
-	}
-    	.grid-container-element { 
-    		display: grid; 
-    		grid-template-columns: 1fr 1fr; 
-    		grid-gap: 100px; 
-   		 	border: 5px solid black; 
-  	 		width: 100%; 
-		} 
-		.grid-child-element { 
-    		margin: 15px; 
-    		border: 1px; 
+    	
+    	.nav-bar {
+			width: 100%;
+			height: 60 px;
+			margin: 5 px;
+			background: #e6e6fa;
+			position: sticky;
+			top: 0 px; 
 		}
-  		
+
+		.nav-bar > .element {
+			width: 22%;
+			line-height: 10px;
+			text-align: center;
+			color: #4B0082;
+			display: inline-block;
+			margin: 10px;
+			font-family: "Monaco", "Lucida Console";
+			text-decoration: none; 
+			font-size: 20px;
+		}
+
+  		.ariana {
+  			width:  95%;
+  			height: 20%;
+  			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+  			padding-top:  2.5%;
+  		}
+
+  		.blurb {
+  			width:  95%;
+  			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+  			text-align: center;
+  		}
   	</style>
   	
-  	<div class = "grid-container-element">
-  		
-  		<div class = "grid-child-element">
-			<h1> Money & Music </h1>
-		</div>
+  	<div class = "nav-bar">
 		
-		<div class = "grid-child-element">
-			<nav>
-				<a href="index.html">HOME</a> |
-				<a href="index.html">HISTORY</a> |
-				<a href="index.html">I WANT</a> |
-				<a href="index.html">I NEED</a>
-			</nav>
-		</div>
-	
+				<a href="/index.html/" class = "element">HOME</a> |
+				<a href="/index.html/" class = "element">HISTORY</a> |
+				<a href="/index.html/" class = "element">I WANT</a> |
+				<a href="/index.html/" class = "element">I NEED</a>
 	</div>
 
 </head>
-<body>
-	<div style = "font-size: 50px; text-align: center;">
-	<p> Consumerism in Pop Music </p>
+<body> 
+	<div style = "font-size: 50px; text-align: center; color: #4B0082;">
+	<p> Money & Music </p>
 	</div>
-	<img src = "7rings.jpeg" >
-	<p>Pop music is inundated with themes of falling in love or falling out of love, so when a song's theme isn't love-related, the song seems to stick out. During the pandemic, I found myself creating playlists around themes that aren’t about someone’s relationship status. As implied by this site’s title, the theme of consumerism in songs was enticing. Whether the artist was flaunting their wealth or criticizing Western society’s capitalistic ways, it was always a reflection of the culture of money at that moment in time. Economics and artistic expression are so deeply intertwined within the lyrics of some well-written songs. Therefore, these songs deserve to be analyzed and appreciated for that. I hope you enjoy reading my analyses!</p>
+
+	<div style= "background-color: #fbedef; postion: absolute; width: 45%; display: block; margin-left: auto; margin-right: auto;">
+		<img src = "7rings.jpeg" class = "ariana" >
+		<p class = "blurb" style="font-size: 25px;"> Join Me on my Musical Analysis Journey!</p>
+		<p class = "blurb"> Pop music is inundated with themes of falling in love or falling out of love, so when a song's theme isn't love-related, the song seems to stick out. During the pandemic, I found myself creating playlists around themes that aren’t about someone’s relationship status. As implied by this site’s title, the theme of consumerism in songs was enticing. Whether the artist was flaunting their wealth or criticizing Western society’s capitalistic ways, it was always a reflection of the culture of money at that moment in time. Economics and artistic expression are so deeply intertwined within the lyrics of some well-written songs. Therefore, these songs deserve to be analyzed and appreciated for that. I hope you enjoy reading my analyses! </p>
+	</div>
+
 </body>
 </html>
