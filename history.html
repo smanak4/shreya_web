@@ -28,9 +28,9 @@
 			text-decoration: none; 
 			font-size: 20px;
 		}
-		.element:hover{
-			color: white;
-		}
+    .element:hover{
+      color: white;
+    }
   		.blurb {
   			width:  95%;
   			display: block;
@@ -56,27 +56,53 @@
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 50%;
 }
 
 
 .left {
-  left: 0;
+  width: 48%;
+  animation-name: slideFromLeft;
+  animation-duration: 2s;
   background: #e6e6fa
 }
 
 .right {
-  left: 50%;
+  
+  animation-name: slideFromRight;
+  animation-duration: 2s;
+  margin-left: 50%;
   background: #E1E2E7;
 }
+
+@keyframes slideFromLeft{
+  from{
+    margin-right: 200%;
+    width: 0%;
+  }
+  to{
+    margin-left: 0;
+    width: 48%;
+  }
+}
+
+@keyframes slideFromRight{
+  from{
+    margin-left: 200%;
+    width: 0%;
+  }
+  to{
+    margin-right: 0;
+  }
+}
+
   	</style>
   	
   	<div class = "nav-bar">
 		
-				<a href="index.html" class = "element">HOME</a> |
-				<a href="history.html" class = "element">HISTORY</a> |
-				<a href="index.html" class = "element">I WANT</a> |
-				<a href="index.html" class = "element">I NEED</a>
+				<a href="/index.html/" class = "element">HOME</a> |
+				<a href="/history.html/" class = "element">HISTORY</a> |
+				<a href="/index.html/" class = "element">I WANT</a> |
+				<a href="/index.html/" class = "element">I NEED</a>
 	</div>
 
 	<body>
@@ -88,19 +114,7 @@
 	<div class="timeline">
   <div class="container left">
     <div class="content">
-      <h2>PRESENT</h2>
-      <p>something</p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h2>2010s</h2>
-      <p>something</p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h2>2000s</h2>
+      <h2>1980s</h2>
       <p>something</p>
     </div>
   </div>
@@ -112,7 +126,19 @@
   </div>
   <div class="container left">
     <div class="content">
-      <h2>1980s</h2>
+      <h2>2000s</h2>
+      <p>something</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2010s</h2>
+      <p>something</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>PRESENT DAY</h2>
       <p>something</p>
     </div>
   </div>
