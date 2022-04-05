@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title> Money & Music </title>
+	<style>
+		
+		p  {
+    	font-family: "Lucida Console", "Monaco" ;
+    	}
+    	
+    	.nav-bar {
+			width: 100%;
+			height: 60 px;
+			margin: 5 px;
+			background: #e6e6fa;
+			position: sticky;
+			top: 0 px; 
+		}
+
+		.nav-bar > .element {
+			width: 22%;
+			line-height: 10px;
+			text-align: center;
+			color: #4B0082;
+			display: inline-block;
+			margin: 10px;
+			font-family: "Monaco", "Lucida Console";
+			text-decoration: none; 
+			font-size: 20px;
+		}
+
+		.element:hover{
+			color: white;
+		}
+
+  		.blurb {
+  			width:  95%;
+  			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+  			text-align: center;
+  		}
+
+  		.homer{
+  			background-color: white;
+  			postion: relative; 
+  			width: 50%;
+  			length:  50%;
+  			float: left;
+  		}
+  		.worldDance{
+			background-color: white;
+  			postion: relative; 
+  			width: 50%;
+  			length:  50%;
+  			float: right;
+  		}
+  	</style>
+  	
+  	<div class = "nav-bar">
+		
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/index.html" class = "element">HOME</a> |
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/history.html" class = "element">HISTORY</a> |
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/want.html" class = "element">I WANT</a> |
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/need.html" class = "element">I NEED</a>
+	</div>
+
+</head>
+
+<body>
+
+	<div style="background-color: #fbedef; margin-left: 10%; margin-right: 10%; width: 80%; ">
+			
+			<p class="blurb" style="font-size: 25px;"> WHAT DOES JESSIE J NEED?</p>
+
+			<div class = homer>
+				
+					<img src = money.jpeg style="width:40%; length:45%" id = "money" class = "wrong"> </img>
+					<img src = wrong.jpg style="width:40%; length:45%; display: none;" id = "wrong" class = "wrong"> </img>
+				
+			</div>
+
+			<div class = worldDance>
+				
+					<img src = world.jpeg style="width:40%; length:45%" id= "world" class = "right"> </img>
+					<img src = correct.jpg style="width:40%; length:45%; display: none;" id = "correct" class = "right"> </img>
+			
+			</div>	
+	</div>
+
+<script type="text/javascript">
+	 
+    $('.right').click(function(){
+   		$('#correct').show('slow');
+   		$('#world').hide('slow');
+	});
+
+	$('.wrong').click(function(){
+   		$("#wrong").show('slow');
+   		$('#money').hide('slow');
+	});
+
+    
+
+</script>
+</body>
+
+</html>
