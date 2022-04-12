@@ -54,10 +54,10 @@
   	
   	<div class = "nav-bar">
 		
-				<a href="index.html" class = "element">HOME</a> |
-				<a href="history.html" class = "element">HISTORY</a> |
-				<a href="want.html" class = "element">I WANT</a> |
-				<a href="need.html" class = "element">I NEED</a>
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/index.html" class = "element">HOME</a> |
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/history.html" class = "element">HISTORY</a> |
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/want.html" class = "element">I WANT</a> |
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/need.html" class = "element">I NEED</a>
 	</div>
 
 </head>
@@ -69,11 +69,13 @@
 	<div style = "width:100%">
 	
 		<div style= "background-color: #fbedef;postion: relative; width: 30%;float: left;">
-			<p> hello </p>
+			<p style = "margin-left: auto; margin-right: auto; text-align: center;"> Pop Artists </p>
+			<input class=searchbar type="text" placeholder="Search For an Artist" style = "margin-left: auto; margin-right: auto;" > </input>
 		</div>
 	
 		<div style= "background-color: #fbedef;postion: relative; width: 30%; float: right;">
-			<p> hello </p>
+			<p style = "margin-left: auto; margin-right: auto; text-align: center;"> Some Song Analyses</p>
+			<input class=searchbar type="text" placeholder="Search For a Song" style = "margin-left: auto; margin-right: auto;" > </input>
 		</div>
 	
 		<div style="background-color: #fbedef;postion: relative;width: 30%;margin-left: 2-;margin-left: 35%;">
@@ -82,5 +84,15 @@
 			<p class="blurb"> Pop music is inundated with themes of falling in love or falling out of love, so when a song's theme isn't love-related, the song seems to stick out. During the pandemic, I found myself creating playlists around themes that aren’t about someone’s relationship status. As implied by this site’s title, the theme of consumerism in songs was enticing. Whether the artist was flaunting their wealth or criticizing Western society’s capitalistic ways, it was always a reflection of the culture of money at that moment in time. Economics and artistic expression are so deeply intertwined within the lyrics of some well-written songs. Therefore, these songs deserve to be analyzed and appreciated for that. I hope you enjoy reading my analyses! </p>
 		</div>	
 	</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".searchbar").keyup(function(event) {
+		var k = $(this).val();
+		loadData(k);
+		});
+	});
+</script>
+
 </body>
 </html>
