@@ -88,41 +88,41 @@
 	</div>
 
 </head>
-<body> 
-	 <div class="parallax-img" style="background-image: url(7rings.jpeg); height: 50%;"></div>
-	
-	
-	<div style = "font-size: 50px; text-align: center; color: #4B0082;">
-	<p> Money & Music </p>
-	</div>
-	
-	<div style = "width:100%">
-	
-		<div style= "background-color: #fbedef;postion: relative; width: 30%;float: left;">
-			<p style = "margin-left: auto; margin-right: auto; text-align: center;"> Pop Artists </p>
-			<input class=searchbar type="text" placeholder="Search For an Artist" style = "margin-left: auto; margin-right: auto;" > </input>
-		</div>
-	
-		<div style= "background-color: #fbedef;postion: relative; width: 30%; float: right;">
-			<p style = "margin-left: auto; margin-right: auto; text-align: center;"> Some Song Analyses</p>
-			<input class=searchbar type="text" placeholder="Search For a Song" style = "margin-left: auto; margin-right: auto;" > </input>
-		</div>
-	
-		<div style="background-color: #fbedef;postion: relative;width: 30%;margin-left: 2-;margin-left: 35%;">
-			<img src="7rings.jpeg" class="ariana">
-			<p class="blurb" style="font-size: 25px;"> Join Me on my Musical Analysis Journey!</p>
-			<p class="blurb"> Pop music is inundated with themes of falling in love or falling out of love, so when a song's theme isn't love-related, the song seems to stick out. During the pandemic, I found myself creating playlists around themes that aren’t about someone’s relationship status. As implied by this site’s title, the theme of consumerism in songs was enticing. Whether the artist was flaunting their wealth or criticizing Western society’s capitalistic ways, it was always a reflection of the culture of money at that moment in time. Economics and artistic expression are so deeply intertwined within the lyrics of some well-written songs. Therefore, these songs deserve to be analyzed and appreciated for that. I hope you enjoy reading my analyses! </p>
-		</div>	
+<body>
+
+	<div style="background-color: #fbedef; margin-left: 10%; margin-right: 10%; width: 80%; ">
+			
+			<p class="blurb" style="font-size: 25px;"> WHAT DOES JESSIE J NEED?</p>
+
+			<div class = homer>
+				
+					<img src = money.jpeg style="width:40%; length:45%" id = "money" class = "wrong"> </img>
+					<img src = wrong.jpg style="width:40%; length:45%; display: none;" id = "wrong" class = "wrong"> </img>
+				
+			</div>
+
+			<div class = worldDance>
+				
+					<img src = world.jpeg style="width:40%; length:45%" id= "world" class = "right"> </img>
+					<img src = correct.jpg style="width:40%; length:45%; display: none;" id = "correct" class = "right"> </img>
+			
+			</div>	
 	</div>
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		$(".searchbar").keyup(function(event) {
-		var k = $(this).val();
-		loadData(k);
-		});
+	 
+    $('.right').click(function(){
+   		$('#correct').show('slow');
+   		$('#world').hide('slow');
 	});
-</script>
 
+	$('.wrong').click(function(){
+   		$("#wrong").show('slow');
+   		$('#money').hide('slow');
+	});
+
+    
+
+</script>
 </body>
 </html>
