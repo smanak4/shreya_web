@@ -1,0 +1,98 @@
+body, html {
+			height: 100%; 
+			background: url('background.jpeg');
+			
+		}
+
+		.parallax-img {
+    position: relative;
+    opacity: 100;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+		}
+
+		p  {
+    	font-family: "Lucida Console", "Monaco" ;
+    	}
+    a {
+    	font-family: "Lucida Console", "Monaco" ;
+    }	
+    	.nav-bar {
+			width: 100%;
+			height: 60 px;
+			margin: 5 px;
+			background-color: #e6e6fa;
+			position: sticky;
+			top: 0 px; 
+			opacity: 1;
+		}
+
+		.nav-bar > .element {
+			width: 22%;
+			line-height: 10px;
+			text-align: center;
+			color: #4B0082;
+			display: inline-block;
+			margin: 10px;
+			font-family: "Monaco", "Lucida Console";
+			text-decoration: none; 
+			font-size: 20px;
+		}
+
+		.element:hover{
+			color: white;
+		}
+
+  		.blurb {
+  			width:  95%;
+  			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+  			text-align: center;
+  		}
+
+  		@media(max-width: 480px){
+  .nav-bar {
+      width: 100%;
+      height: 25 px;
+      margin: 2 px;
+      background: #e6e6fa;
+      position: sticky;
+      top: 0 px; 
+    }
+
+    .nav-bar > .element {
+      width: 22%;
+      line-height: 1px;
+      text-align: center;
+      color: #4B0082;
+      display: inline-block;
+      margin: 10px;
+      font-family: "Monaco", "Lucida Console";
+      text-decoration: none; 
+      font-size: 5%;
+    }
+    .element:hover{
+      color: white;
+    }
+
+    .footer{
+    		margin-top: 100%;
+				position: static;
+  			left: 0;
+  			bottom: 0;
+  			width: 100%;    
+				background-color: #e6e6fa;
+				font-family: "Monaco", "Lucida Console";
+				text-align: left;
+				color: #4B0082;
+				font-size: 15px;
+				opacity: 1;
+  		}
+
+a:hover{
+  		color: white ;
+  	}
+  

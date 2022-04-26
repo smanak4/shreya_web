@@ -2,127 +2,68 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<title> Money & Music </title>
-	<style>
-		
-		p  {
-    	font-family: "Lucida Console", "Monaco" ;
-    	}
-    	
-    	.nav-bar {
-			width: 100%;
-			height: 60 px;
-			margin: 5 px;
-			background: #e6e6fa;
-			position: sticky;
-			top: 0 px; 
-		}
-
-		.nav-bar > .element {
-			width: 22%;
-			line-height: 10px;
-			text-align: center;
-			color: #4B0082;
-			display: inline-block;
-			margin: 10px;
-			font-family: "Monaco", "Lucida Console";
-			text-decoration: none; 
-			font-size: 20px;
-		}
-
-		.element:hover{
-			color: white;
-		}
-
-  		.ariana {
-  			width:  95%;
-  			height: 20%;
-  			display: block;
-  			margin-left: auto;
-  			margin-right: auto;
-  			padding-top:  2.5%;
-  		}
-
-  		.blurb {
-  			width:  95%;
-  			display: block;
-  			margin-left: auto;
-  			margin-right: auto;
-  			text-align: center;
-  		}
-
-  		@media(max-width: 480px){
-  .nav-bar {
-      width: 100%;
-      height: 25 px;
-      margin: 2 px;
-      background: #e6e6fa;
-      position: sticky;
-      top: 0 px; 
-    }
-
-    .nav-bar > .element {
-      width: 22%;
-      line-height: 1px;
-      text-align: center;
-      color: #4B0082;
-      display: inline-block;
-      margin: 10px;
-      font-family: "Monaco", "Lucida Console";
-      text-decoration: none; 
-      font-size: 5%;
-    }
-    .element:hover{
-      color: white;
-    }
-
-    }
-  	</style>
+	<link rel = "stylesheet" href = "style.css">
+	<title> Money &amp; Music </title>
   	
-  	<div class = "nav-bar">
+  	</head>
+  	<body>
+  		<div class="nav-bar">
 		
-				<a href="index.html" class = "element">HOME</a> |
-				<a href="history.html" class = "element">HISTORY</a> |
-				<a href="want.html" class = "element">I WANT</a> |
-				<a href="need.html" class = "element">I NEED</a>
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/index.html" class="element">HOME</a> |
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/history.html" class="element">HISTORY</a> |
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/want.html" class="element">I WANT</a> |
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/need.html" class="element">I NEED</a>
 	</div>
 
-</head>
-<body>
 
-	<div style="background-color: #fbedef; margin-left: 10%; margin-right: 10%; width: 80%; ">
-			
-			<p class="blurb" style="font-size: 25px;"> WHAT DOES JESSIE J NEED?</p>
+ 
+	<div style="font-size: 50px; text-align: center; color: #4B0082; background-color: #fbedef">
+		<p style = "margin: 0%"> Money &amp; Music </p>
+		</div>
 
-			<div class = homer>
-				
-					<img src = money.jpeg style="width:40%; length:45%" id = "money" class = "wrong"> </img>
-					<img src = wrong.jpg style="width:40%; length:45%; display: none;" id = "wrong" class = "wrong"> </img>
-				
-			</div>
 
-			<div class = worldDance>
-				
-					<img src = world.jpeg style="width:40%; length:45%" id= "world" class = "right"> </img>
-					<img src = correct.jpg style="width:40%; length:45%; display: none;" id = "correct" class = "right"> </img>
-			
-			</div>	
+	<div class="parallax-img" style="background-image: url('7rings.jpeg'); height: 60%;"></div>
+
+
+<div style="background-color: #fbedef;postion: relative;width: 100%; margin-top: 0;">
+			<p class="blurb" style="font-size: 25px;margin-top: 0px;"> Join Me on my Musical Analysis Journey!</p>
+			<p class="blurb" style="margin-bottom: 0px;"> Pop music is inundated with themes of falling in love or falling out of love, so when a song's theme isn't love-related, the song seems to stick out. During the pandemic, I found myself creating playlists around themes that aren’t about someone’s relationship status. As implied by this site’s title, the theme of consumerism in songs was enticing. Whether the artist was flaunting their wealth or criticizing Western society’s capitalistic ways, it was always a reflection of the culture of money at that moment in time. Economics and artistic expression are so deeply intertwined within the lyrics of some well-written songs. Therefore, these songs deserve to be analyzed and appreciated for that. I hope you enjoy reading my analyses! </p>
+		</div>	
+
+<div class="parallax-img" style="background-image: url('pricetag.png'); height: 60%;"></div>
+
+	<div style="width:100%; margin-bottom: 8%">
+	
+		<div style=" width: 50%; float: left; background-color: #fbedef ; margin-left: 0px;">
+			<p style="margin-left: auto; margin-right: auto; text-align: center;"> Pop Artists </p>
+			<input class="searchbar" type="text" placeholder="Search For an Artist" style="position:relative;left: 38%;font-style:'Lucida Console'"> 
+		</div>
+	
+		<div style=" width: 50%; float: right; background-color: #fbedef ; ">
+			<p style="margin-left: auto; margin-right: auto; text-align: center;"> Some Song Analyses</p>
+			<input class="searchbar" type="text" placeholder="Search For a Song" style="position:relative;left: 38%; font-style:'Lucida Console';"> 
+		</div>
+	
+		
 	</div>
+
+
+	<footer class = "footer" style = "background-color: #e6e6fa;">
+		<p> Developed By: Shreya Manak </p>
+		<a href = "https://open.spotify.com/playlist/1xXllwI76OeN2iAX1IRQND?si=90dde80f00954bac"> Playlist <a>
+	</footer>
+
 
 <script type="text/javascript">
-	 
-    $('.right').click(function(){
-   		$('#correct').show('slow');
-   		$('#world').hide('slow');
+	$(document).ready(function(){
+		$(".searchbar").keyup(function(event) {
+		var k = $(this).val();
+		loadData(k);
+		});
 	});
-
-	$('.wrong').click(function(){
-   		$("#wrong").show('slow');
-   		$('#money').hide('slow');
-	});
-
-    
-
 </script>
+
+
+
 </body>
 </html>
