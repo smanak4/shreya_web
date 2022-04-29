@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel = "stylesheet" href = "style.css">
-	<title> Money & Music </title>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Money &amp; Music </title>
+
+
 	<style>
 		
 /* Code from W3 Schools */
@@ -18,25 +23,26 @@
 }
 
 .container {
-  padding: 10px 40px;
+  padding: 10 px 0px;
   position: relative;
   background-color: inherit;
 }
 
 
 .left {
-  width: 48%;
+  
   animation-name: slideFromLeft;
-  animation-duration: 2s;
+  animation-duration: 3s;
   background: #e6e6fa;
   height: 17.5%;
+  margin-right: 46%;
 }
 
 .right {
   
   animation-name: slideFromRight;
-  animation-duration: 2s;
-  margin-left: 50%;
+  animation-duration: 3s;
+  margin-left: 46%;
   background: #E1E2E7;
   height: 17.5%;
 
@@ -44,12 +50,12 @@
 
 @keyframes slideFromLeft{
   from{
-    margin-right: 200%;
+    margin-right: 500%;
     width: 0%;
   }
   to{
     margin-left: 0;
-    width: 48%;
+    width: 54%;
   }
 }
 
@@ -60,32 +66,41 @@
   }
   to{
     margin-right: 0;
+    width: 54%;
   }
 }
 
+
+
+h3{
+  text-align: center;
+}
+p{
+  text-align:  center;
+}
   	</style>
   	
   	<div class = "nav-bar">
 		
-	<a href="index.html" class = "element">HOME</a> |
-        <a href="history.html" class = "element">HISTORY</a> |
-        <a href="want.html" class = "element">I WANT</a> |
-        <a href="need.html" class = "element">I NEED</a>
+				<a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/index.html" class = "element">HOME</a> |
+        <a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/history.html" class = "element">HISTORY</a> |
+        <a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/want.html" class = "element">I WANT</a> |
+        <a href="/Users/ayerh/Documents/Important/College/BPW/shreya_website/need.html" class = "element">I NEED</a>
 	</div>
 
 	<body>
 	<div style = " text-align: center; color: #4B0082; background-color: #fbedef; margin:0%">
-	<p style = "font-size: 50px; margin: 0%"> History </p>
+	<p style = "font-size: 50px; margin-top: 5%;margin-bottom: 0px"> History </p>
  </div>
 
 
-<div class="parallax-img" style="background-image: url('9to5.jpeg'); height: 30%;"></div>
+<div class="parallax-img" style="background-image: url('9to5.jpeg'); height: 50%; opacity: .8"></div>
 
   <!-- Code cited and inspired from W3 Schools -->
 	<div class="timeline" >
   <div class="container left">
     <div class="content">
-      <h3>1980s</h3>
+      <h3 >1980s</h3>
       <p>9 to 5 by Dolly Parton (1980)</p>
       <p>Material Girl by Madonna (1984)</p>
     </div>
@@ -94,13 +109,13 @@
     <div class="content">
       <h3>1990s</h3>
       <p>Bills, Bills, Bills by Destiny’s Child (1999)</p>
-      <p>Money Don’t Matter 2 Night by Prince And the New Power Generation (1992)</p>
+      <p>Money Ain't A Thang by Jay Z  (1998)</p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
       <h3>2000s</h3>
-      <p>Rich Girl by Gwen Stefani (2004)</p>
+      <p >Rich Girl by Gwen Stefani (2004)</p>
       <p> Paper Planes by M.I.A. (2007) </p>
     </div>
   </div>
@@ -120,14 +135,14 @@
   </div>
 </div>
 
-<div class="parallax-img" style="background-image: url('xs.jpeg'); height: 40%;"></div>
-
 <div style = " text-align: center; color: #4B0082; background-color: #fbedef">
- <p style = "font-size: 25px; margin: 0">While some songs reflect the great power money can provide, others exhibit the downfalls of living in a consumer based world. Another interesting pattern is that most of these money related songs are sung by women as a means of empowering other women. Through periods of recession and economy  we can hear the significance of money with these songs.
+ <p style = "font-size: 25 px; margin: 0">While some songs reflect the great power money can provide, others exhibit the downfalls of living in a consumer based world. Another interesting pattern is that most of these money related songs are sung by women as a means of empowering other women. Through periods of recession and economy  we can hear the significance of money with these songs.</p>
  </div> 
 
+ <div class="parallax-img" style="background-image: url('xs.jpeg'); height: 50%; opacity: .8"></div>
+
 <footer class="footer" style="background-color: #e6e6fa;">
-    <p> Developed By: Shreya Manak </p>
+    <p style= "text-align: left"> Developed By: Shreya </p>
     <a href="https://open.spotify.com/playlist/1xXllwI76OeN2iAX1IRQND?si=90dde80f00954bac"> Playlist </a>
 </footer>
 
